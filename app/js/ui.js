@@ -15,6 +15,7 @@ const UI = {
     app.innerHTML = `
       <div class="screen active" id="screen-home">
         <div class="home-header">
+          <a href="../" class="home-back">&#8592; rechenstar.ch</a>
           <div class="home-title">RechenStar</div>
           <div class="home-greeting">Hallo, ${data.username}!</div>
           <div class="home-stars">
