@@ -253,12 +253,86 @@
             margin-left: auto;
         }
 
+        .story-section {
+            background: #fafaff;
+        }
+
+        .story-section h2 {
+            color: #6b4fa2;
+        }
+
+        .story-intro {
+            font-size: 18px;
+            color: #1d1d1f;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .story-section blockquote {
+            border-left: 4px solid #667eea;
+            padding: 16px 20px;
+            margin: 24px 0;
+            background: #fff;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            color: #424245;
+        }
+
+        .story-perspectives {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .story-perspective {
+            background: #fff;
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            color: #424245;
+        }
+
+        .story-perspective .sp-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .story-highlights {
+            margin-top: 24px;
+        }
+
+        .story-highlight {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .story-highlight .sh-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .story-highlight strong {
+            color: #1d1d1f;
+        }
+
+        .story-highlight p {
+            margin-bottom: 0;
+            font-size: 15px;
+        }
+
         @media (max-width: 600px) {
             .hero h1 { font-size: 32px; }
             .hero .subtitle { font-size: 18px; }
             .features { grid-template-columns: 1fr; }
+            .story-perspectives { grid-template-columns: 1fr; }
             nav { gap: 20px; }
-
         }
     </style>
 </head>
@@ -267,6 +341,7 @@
 <div class="nav-bar">
 <nav>
     <a href="#">Home</a>
+    <a href="#geschichte">Die Geschichte</a>
     <a href="#datenschutz">Datenschutz</a>
     <a href="#support">Support</a>
     <a href="./app/" class="nav-cta">Jetzt üben</a>
@@ -341,6 +416,95 @@
             </div>
         </div>
 
+    </section>
+
+    <!-- GESCHICHTE -->
+    <section id="geschichte" class="story-section">
+        <h2>Die Geschichte hinter RechenStar</h2>
+
+        <p class="story-intro">
+            Wie aus einem demotivierten Erstklässler eine App wurde — ohne eine einzige Zeile Code.
+        </p>
+
+        <p>
+            Wir haben vier Kinder. Drei davon haben das Mathe-Gen geerbt. Eines... ähm, nicht.
+        </p>
+
+        <p>
+            Unser Jüngster (7) tut sich mit Rechnen schwer. Richtig schwer. Und ihr kennt das Spiel:
+            Immer wieder hinsetzen, üben, motivieren, kämpfen. Für ihn eine Qual, weil er überhaupt
+            keine Lust hat und es ihm auch nicht leicht fällt. Für uns als Eltern natürlich auch
+            absolut nervig. Und dann macht man es halt nicht mehr so konsequent. Auch nicht gut!
+        </p>
+
+        <p>
+            Dann kam die Idee — dank intensiver Nutzung von
+            <a href="https://claude.ai" target="_blank" rel="noopener">Claude Code</a> im Geschäft:
+            Wieso nicht einfach eine App machen? Das wollte ich schon immer, aber noch nie war es so
+            einfach! Ein Prompt und schon fast ein MVP! Vibe Coding FTW!
+        </p>
+
+        <p>Also haben wir losgelegt — nicht allein, sondern mit den richtigen Perspektiven:</p>
+
+        <div class="story-perspectives">
+            <div class="story-perspective">
+                <span class="sp-icon">👩‍🏫</span>
+                <span>Lehrer und Pädagogen für die didaktische Grundlage</span>
+            </div>
+            <div class="story-perspective">
+                <span class="sp-icon">👨‍💻</span>
+                <span>KI als iOS-Entwickler</span>
+            </div>
+            <div class="story-perspective">
+                <span class="sp-icon">🎨</span>
+                <span>UX-Expertise für kindgerechtes Design</span>
+            </div>
+            <div class="story-perspective">
+                <span class="sp-icon">👨‍👩‍👧‍👦</span>
+                <span>Uns Eltern als Stakeholder</span>
+            </div>
+        </div>
+
+        <p>
+            Und natürlich: das Kind selbst als wichtigste Testperson.
+        </p>
+
+        <p>
+            Es ist unglaublich, wie schnell man heute zu einem echten Produkt kommt, ohne eine
+            einzige Zeile Code selbst geschrieben zu haben. Aber was wirklich cool ist, ist nicht
+            nur die Geschwindigkeit — sondern was dabei rausgekommen ist:
+        </p>
+
+        <div class="story-highlights">
+            <div class="story-highlight">
+                <span class="sh-icon">🔒</span>
+                <p><strong>100% privat</strong> — Keine Accounts, kein Tracking, keine Server. Alles bleibt lokal auf dem Gerät. Gerade bei einer Kinder-App nicht verhandelbar.</p>
+            </div>
+            <div class="story-highlight">
+                <span class="sh-icon">🧠</span>
+                <p><strong>Adaptives Lernen</strong> — Die App erkennt automatisch Schwächen und wiederholt gezielt diese Aufgaben. Löst das Kind eine vorher falsche Aufgabe richtig? Bonus-Sterne und extra Motivation.</p>
+            </div>
+            <div class="story-highlight">
+                <span class="sh-icon">💚</span>
+                <p><strong>Nur positive Verstärkung</strong> — Kein Bestrafen, kein Beschämen. Nach 2 Fehlversuchen wird die Lösung gezeigt. Kein Kind bleibt stecken. Basierend auf Lernpsychologie, nicht auf Engagement-Metriken.</p>
+            </div>
+            <div class="story-highlight">
+                <span class="sh-icon">📊</span>
+                <p><strong>Eltern-Dashboard</strong> — Detaillierte Fortschrittsanalyse, Stärken/Schwächen-Übersicht, Sitzungshistorie. Alles offline, alles lokal.</p>
+            </div>
+            <div class="story-highlight">
+                <span class="sh-icon">♿</span>
+                <p><strong>Barrierefreiheit</strong> — VoiceOver, dynamische Schriftgrössen, Farbenblind-Modi, reduzierte Animationen. Die meisten Konkurrenten bieten das nicht mal ansatzweise.</p>
+            </div>
+            <div class="story-highlight">
+                <span class="sh-icon">🆓</span>
+                <p><strong>Komplett gratis</strong> — Keine Werbung, keine In-App-Käufe, kein Freemium. Bei nur 6,7 MB.</p>
+            </div>
+        </div>
+
+        <blockquote>
+            Das Wichtigste: Unser Sohn übt jetzt freiwillig. Jeden Tag. Weil es sich nicht wie Üben anfühlt.
+        </blockquote>
     </section>
 
     <!-- DATENSCHUTZ -->
