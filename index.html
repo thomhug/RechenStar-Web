@@ -70,10 +70,10 @@
 
         .cta-cards {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 16px;
             margin-top: 32px;
-            max-width: 600px;
+            max-width: 780px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -135,6 +135,12 @@
             }
             .cta-card-qr {
                 display: none;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .cta-cards {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -371,6 +377,13 @@
             <h3>Im App Store laden</h3>
             <p>Für iPhone und iPad — mit Eltern-Dashboard und Auszeichnungen.</p>
         </a>
+        <a href="https://play.google.com/store/apps/details?id=ch.rechenstar.app" class="cta-card" target="_blank" rel="noopener">
+            <div class="cta-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.38l2.5 1.449c.5.29.5.99 0 1.28l-2.196 1.273-2.534-2.534 2.23-1.468zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+            </div>
+            <h3>Im Play Store laden</h3>
+            <p>Für Android — mit Eltern-Dashboard und Auszeichnungen.</p>
+        </a>
         <div class="cta-card cta-card-qr">
             <img class="qr-code" src="img/qr-appstore.png" alt="QR-Code zum App Store">
             <p>QR-Code scannen für die iOS-App</p>
@@ -514,7 +527,7 @@
 
         <h3>1. Verantwortlicher</h3>
         <p>
-            RechenStar ist eine Mathe-App für Kinder im Grundschulalter, verfügbar als iOS-App und Web-App.
+            RechenStar ist eine Mathe-App für Kinder im Grundschulalter, verfügbar als iOS-App, Android-App und Web-App.
             Entwickelt von der <a href="https://anbeda.ch" target="_blank" rel="noopener">anbeda AG</a>.<br>
             Kontakt: <a href="mailto:rechenstar@anbeda.ch">rechenstar@anbeda.ch</a>
         </p>
@@ -527,7 +540,7 @@
         <p>
             Alle Informationen, die die App erzeugt (z. B. Übungsfortschritt, Einstellungen, Lernstatistiken),
             werden ausschliesslich lokal auf dem Gerät gespeichert — in der iOS-App mit SwiftData,
-            in der Web-App mit localStorage. Diese Daten verlassen das Gerät zu keinem Zeitpunkt.
+            in der Android-App mit Room, in der Web-App mit localStorage. Diese Daten verlassen das Gerät zu keinem Zeitpunkt.
         </p>
 
         <h3>3. Wie werden die Daten verwendet?</h3>
@@ -574,7 +587,7 @@
 
         <h3>7. Löschen der Daten</h3>
         <p>
-            iOS-App: Alle Daten werden vollständig gelöscht, wenn die App deinstalliert wird.<br>
+            iOS-/Android-App: Alle Daten werden vollständig gelöscht, wenn die App deinstalliert wird.<br>
             Web-App: Daten können über die Browser-Einstellungen (Websitedaten löschen) entfernt werden.
         </p>
         <p>Eine darüber hinausgehende Datenspeicherung findet nicht statt.</p>
